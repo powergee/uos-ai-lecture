@@ -1,32 +1,48 @@
 #include "Perceptron.h"
 #include <cstdlib>
+#include <iostream>
 
-double Weight::generateRandomly(double min, double max) {
+double Perceptron::generateRandomly(double min, double max) {
     double range = max-min;
     return min + ((double)rand() / RAND_MAX * range);
 }
 
-Weight::Weight(double bias, double w1, double w2) {
-    this->bias = bias;
-    this->w1 = w1;
-    this->w2 = w2;
-}
-
-Weight::Weight() {
+Perceptron::Perceptron(int inputDim) {
+    if (inputDim <= 0) {
+        std::cerr << "Perceptron: inputDim must be greater than 0.";
+        exit(1);
+    }
     bias = generateRandomly(-1, 1);
-    w1 = generateRandomly(-1, 1);
-    w2 = generateRandomly(-1, 1);
+    weights.resize(inputDim);
+    for (double& w : weights) {
+        w = generateRandomly(-1, 1);
+    }
 }
 
-Perceptron::Perceptron() : weights() {}
+int Perceptron::getInputSize() {
+    return weights.size();
+}
 
-void Perceptron::updateWeights(Weight newWeights) {
+void Perceptron::updateBias(double bias) {
+    this->bias = bias;
+}
+
+void Perceptron::updateWeights(std::vector<double>& newWeights) {
+    if (newWeights.size() <= 0) {
+        std::cerr << "updateWeights: The size of newWeights must be greater than 0.";
+        exit(1);
+    }
     weights = newWeights;
 }
 
-bool Perceptron::getOutput(int x1, int x2) {
-    double sum = weights.bias;
-    sum += x1 * weights.w1;
-    sum += x2 * weights.w2;
+bool Perceptron::getOutput(std::vector<bool>& inputs) {
+    if (weights.size() != inputs.size()) {
+        std::cerr << "getOutput: The size of weight vector and input vector are different.";
+        exit(1);
+    }
+    double sum = bias;
+    for (int i = 0; i < inputs.size(); ++i) {
+        sum += weights[i] * (inputs[i] ? 1 : 0);
+    }
     return (sum > 0);
 }

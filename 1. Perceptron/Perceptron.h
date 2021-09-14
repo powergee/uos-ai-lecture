@@ -1,30 +1,22 @@
-#ifndef PER_H
-#define PER_H
-
-/*
-    Represent weights of a perceptron.
-*/
-class Weight {
-private:
-    double generateRandomly(double min, double max);
-
-public:
-    double bias, w1, w2;
-    Weight(double bias, double w1, double w2);
-    Weight();
-};
+#ifndef PERCEPTRON_H
+#define PERCEPTRON_H
+#include <vector>
 
 /*
     Perceptron class to simulate AND Gate.
 */
 class Perceptron {
 private:
-    Weight weights;
+    double bias;
+    std::vector<double> weights;
+    double generateRandomly(double min, double max);
     
 public:
-    Perceptron();
-    void updateWeights(Weight newWeights);
-    bool getOutput(int x1, int x2);
+    Perceptron(int inputDim);
+    int getInputSize();
+    void updateBias(double bias);
+    void updateWeights(std::vector<double>& newWeights);
+    bool getOutput(std::vector<bool>& inputs);
 };
 
 #endif

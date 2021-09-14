@@ -2,10 +2,6 @@
 #include <string>
 #include "Perceptron.h"
 
-const int ROW_COUNT = 4;
-const int COL_COUNT = 3;
-using TruthTable = int[ROW_COUNT][COL_COUNT];
-
 std::string formatCenter(int width, std::string str) {
     int leftPadding = (width - (int)str.size()) / 2;
     int rightPadding = width - leftPadding - str.size();
@@ -28,66 +24,78 @@ std::string getOrdinal(int number) {
     }
 }
 
-void printTable(TruthTable table, int tryCount) {
-    const int COL1_WIDTH = 8;
-    const int COL2_WIDTH = 8;
-    const int COL3_WIDTH = 10;
-    const int ROW_WIDTH = (COL1_WIDTH + COL2_WIDTH + COL3_WIDTH + COL_COUNT-1);
+void printTable(std::vector<std::vector<bool>> table, int tryCount) {
+    int colWidth = 8;
+    int colCount = table[0].size();
+    int rowWidth = colWidth*colCount + colCount-1;
+    int rowCount = table.size();
 
-    std::cout << formatCenter(ROW_WIDTH, "< " + getOrdinal(tryCount) + " Truth Table >") << "\n";
-    std::cout << formatCenter(COL1_WIDTH, "x1") << "|";
-    std::cout << formatCenter(COL2_WIDTH, "x2") << "|";
-    std::cout << formatCenter(COL3_WIDTH, "Output") << std::endl;
-    std::cout << std::string(ROW_WIDTH, '-') << std::endl;
+    std::cout << formatCenter(rowWidth, "< " + getOrdinal(tryCount) + " Truth Table >") << std::endl;
+    for (int i = 1; i <= colCount-1; ++i) {
+        std::cout << formatCenter(colWidth, "x" + std::to_string(i)) << "|";
+    }
+    std::cout << formatCenter(colWidth, "Output") << std::endl;
+    std::cout << std::string(rowWidth, '-') << std::endl;
 
-    for (int i = 0; i < ROW_COUNT; ++i) {
-        std::cout << formatCenter(COL1_WIDTH, std::to_string(table[i][0])) << "|";
-        std::cout << formatCenter(COL2_WIDTH, std::to_string(table[i][1])) << "|";
-        std::cout << formatCenter(COL3_WIDTH, std::to_string(table[i][2])) << std::endl;
+    for (int i = 0; i < rowCount; ++i) {
+        for (int j = 0; j < colCount; ++j) {
+            std::cout << formatCenter(colWidth, std::to_string(table[i][j]));
+            std::cout << (j == colCount-1 ? "\n" : "|");
+        }
     }
 }
 
 bool checkOutputs(Perceptron& andGate, int& tryCount) {
-    TruthTable table;
-    int answerCount = 0;
+    int inputDim = andGate.getInputSize();
+    int rowCount = (1 << inputDim);
+    std::vector<std::vector<bool>> table(rowCount);
+    int correctCount = 0;
 
-    for (int x1 = 0; x1 <= 1; ++x1) {
-        for (int x2 = 0; x2 <= 1; ++x2) {
-            bool result = andGate.getOutput(x1, x2);
-            answerCount += (result == (x1 && x2) ? 1 : 0);
-
-            int rowIdx = 2*x1+x2;
-            table[rowIdx][0] = x1;
-            table[rowIdx][1] = x2;
-            table[rowIdx][2] = result;
+    for (int r = 0; r < rowCount; ++r) {
+        bool answer = true;
+        for (int xIdx = 0; xIdx < inputDim; ++xIdx) {
+            bool xVal = (r & (1<<xIdx)) > 0;
+            table[r].push_back(xVal);
+            answer = answer && xVal;
         }
+
+        bool output = andGate.getOutput(table[r]);
+        table[r].push_back(output);
+        correctCount += (answer == output ? 1 : 0);
     }
 
     printTable(table, ++tryCount);
-    std::cout << "Count of Correct Outputs = " << answerCount << std::endl;
-    return (answerCount == ROW_COUNT);
+    std::cout << "Count of Correct Outputs = " << correctCount << std::endl;
+    return (correctCount == rowCount);
 }
 
 int main() {
     srand(time(nullptr));
 
+    int inputDim;
+    std::cout << "Enter input dimensions of AND Gate: ";
+    std::cin >> inputDim;
+
     int tryCount = 0;
-    Perceptron andGate;
-    std::cout << "Generated perceptron with random weights!" << std::endl << std::endl;
+    Perceptron andGate(inputDim);
+    std::cout << "Generated perceptron with random bias and weights!" << std::endl << std::endl;
 
     while (!checkOutputs(andGate, tryCount)) {
         std::cout << "\nSome outputs are wrong." << std::endl;
-        std::cout << "You MUST update weights." << std::endl << std::endl;
+        std::cout << "You MUST update bias and weights." << std::endl << std::endl;
 
-        double bias, w1, w2;
-        std::cout << "Update w0(bias): ";
+        double bias;
+        std::vector<double> newWeights(inputDim);
+        std::cout << "Update bias(w0): ";
         std::cin >> bias;
-        std::cout << "Update w1: ";
-        std::cin >> w1;
-        std::cout << "Update w2: ";
-        std::cin >> w2;
 
-        andGate.updateWeights(Weight(bias, w1, w2));
+        for (int i = 0; i < inputDim; ++i) {
+            std::cout << "Update w" << i+1 << ": ";
+            std::cin >> newWeights[i];
+        }
+
+        andGate.updateBias(bias);
+        andGate.updateWeights(newWeights);
         std::cout << std::endl;
     }
     std::cout << std::endl << "Finally all outputs are CORRECT!" << std::endl;
