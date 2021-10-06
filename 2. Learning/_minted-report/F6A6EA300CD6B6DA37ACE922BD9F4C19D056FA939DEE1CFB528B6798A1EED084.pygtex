@@ -1,0 +1,37 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Trainning AND Gate...
+\PYGZhy{} Epoch \PYGZsh{}1 MSE: 2
+\PYGZhy{} Epoch \PYGZsh{}2 MSE: 3
+\PYGZhy{} Epoch \PYGZsh{}3 MSE: 2
+\PYGZhy{} Epoch \PYGZsh{}4 MSE: 2
+\PYGZhy{} Epoch \PYGZsh{}5 MSE: 3
+\PYGZhy{} Epoch \PYGZsh{}6 MSE: 2
+\PYGZhy{} Epoch \PYGZsh{}7 MSE: 1
+\PYGZhy{} Epoch \PYGZsh{}8 MSE: 0
+Successfully trained AND Gate!
+* Saved result files(./results/*.csv).
+
+Trainning OR Gate...
+\PYGZhy{} Epoch \PYGZsh{}1 MSE: 1
+\PYGZhy{} Epoch \PYGZsh{}2 MSE: 2
+\PYGZhy{} Epoch \PYGZsh{}3 MSE: 1
+\PYGZhy{} Epoch \PYGZsh{}4 MSE: 0
+Successfully trained OR Gate!
+* Saved result files(./results/*.csv).
+
+Trainning XOR Gate...
+\PYGZhy{} Epoch \PYGZsh{}1 MSE: 2
+\PYGZhy{} Epoch \PYGZsh{}2 MSE: 4
+\PYGZhy{} Epoch \PYGZsh{}3 MSE: 4
+\PYGZhy{} Epoch \PYGZsh{}4 MSE: 4
+\PYGZhy{} Epoch \PYGZsh{}5 MSE: 4
+\PYGZhy{} Epoch \PYGZsh{}6 MSE: 4
+\PYGZhy{} Epoch \PYGZsh{}7 MSE: 4
+\PYGZhy{} Epoch \PYGZsh{}8 MSE: 4
+\PYGZhy{} Epoch \PYGZsh{}9 MSE: 4
+\PYGZhy{} Epoch \PYGZsh{}10 MSE: 4
+\PYGZhy{} Epoch \PYGZsh{}11 MSE: 4
+\PYGZhy{} Epoch \PYGZsh{}12 MSE: 4
+Failed to train XOR Gate...
+* Saved result files(./results/*.csv).
+\end{Verbatim}

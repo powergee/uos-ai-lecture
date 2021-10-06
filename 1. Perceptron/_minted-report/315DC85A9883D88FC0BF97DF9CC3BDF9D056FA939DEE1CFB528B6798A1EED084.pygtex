@@ -1,0 +1,31 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Enter input dimensions of AND Gate: 2
+Generated perceptron with random bias and weights!
+
+   \PYGZlt{} 1st Truth Table \PYGZgt{}
+   x1   |   x2   | Output
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
+   0    |   0    |   0
+   1    |   0    |   0
+   0    |   1    |   1
+   1    |   1    |   1
+Count of Correct Outputs = 3
+
+Some outputs are wrong.
+You MUST update bias and weights.
+
+Update bias(w0): \PYGZhy{}1.5
+Update w1: 1
+Update w2: 1
+
+   \PYGZlt{} 2nd Truth Table \PYGZgt{}
+   x1   |   x2   | Output
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
+   0    |   0    |   0
+   1    |   0    |   0
+   0    |   1    |   0
+   1    |   1    |   1
+Count of Correct Outputs = 4
+
+Finally all outputs are CORRECT!
+\end{Verbatim}

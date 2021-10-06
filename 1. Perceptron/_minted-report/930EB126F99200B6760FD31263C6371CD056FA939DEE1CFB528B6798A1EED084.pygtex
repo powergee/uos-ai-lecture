@@ -1,0 +1,57 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Enter input dimensions of AND Gate: 4
+Generated perceptron with random bias and weights!
+
+            \PYGZlt{} 1st Truth Table \PYGZgt{}
+   x1   |   x2   |   x3   |   x4   | Output
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
+   0    |   0    |   0    |   0    |   1
+   1    |   0    |   0    |   0    |   1
+   0    |   1    |   0    |   0    |   1
+   1    |   1    |   0    |   0    |   1
+   0    |   0    |   1    |   0    |   1
+   1    |   0    |   1    |   0    |   1
+   0    |   1    |   1    |   0    |   1
+   1    |   1    |   1    |   0    |   1
+   0    |   0    |   0    |   1    |   0
+   1    |   0    |   0    |   1    |   0
+   0    |   1    |   0    |   1    |   0
+   1    |   1    |   0    |   1    |   0
+   0    |   0    |   1    |   1    |   0
+   1    |   0    |   1    |   1    |   0
+   0    |   1    |   1    |   1    |   0
+   1    |   1    |   1    |   1    |   0
+Count of Correct Outputs = 7
+
+Some outputs are wrong.
+You MUST update bias and weights.
+
+Update bias(w0): \PYGZhy{}3.5
+Update w1: 1
+Update w2: 1
+Update w3: 1
+Update w4: 1
+
+            \PYGZlt{} 2nd Truth Table \PYGZgt{}
+   x1   |   x2   |   x3   |   x4   | Output
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
+   0    |   0    |   0    |   0    |   0
+   1    |   0    |   0    |   0    |   0
+   0    |   1    |   0    |   0    |   0
+   1    |   1    |   0    |   0    |   0
+   0    |   0    |   1    |   0    |   0
+   1    |   0    |   1    |   0    |   0
+   0    |   1    |   1    |   0    |   0
+   1    |   1    |   1    |   0    |   0
+   0    |   0    |   0    |   1    |   0
+   1    |   0    |   0    |   1    |   0
+   0    |   1    |   0    |   1    |   0
+   1    |   1    |   0    |   1    |   0
+   0    |   0    |   1    |   1    |   0
+   1    |   0    |   1    |   1    |   0
+   0    |   1    |   1    |   1    |   0
+   1    |   1    |   1    |   1    |   1
+Count of Correct Outputs = 16
+
+Finally all outputs are CORRECT!
+\end{Verbatim}

@@ -1,3 +1,8 @@
+'''
+    Python script to draw graphs of previous results.
+
+    dependencies: matplotlib, numpy
+'''
 from matplotlib import lines
 import numpy as np
 import matplotlib.pyplot as plt
