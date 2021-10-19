@@ -75,32 +75,9 @@ public:
     bool saveWeights(std::string path);
 };
 
-/*
-    An activation function that return 1 if and only if the input is greater than 0.
-*/
-class StepFunction : public Module {
-private:
-    int dimSize;
-
-public:
-    // Create a step function layer that accept an {dimSize}-dimensional input vector.
-    StepFunction(int dimSize);
-
-    // Get the number of dimensions of an input vector.
-    int getInputSize();
-    // Get the number of dimensions of an ouput vector.
-    int getOutputSize();
-
-    // For every elements of input vector, apply step function.
-    std::vector<double> getOutput(std::vector<double>& inputs);
-
-    // Accumulate current gradient with the gradient vector from the upper node.
-    std::vector<double> doBackpropagation(std::vector<double>& upperGradients, double learningRate);
-};
-
 
 /*
-    
+    An activation function that calculate sigmoid values.
 */
 class Sigmoid : public Module {
 private:
@@ -120,56 +97,6 @@ public:
     int getOutputSize();
 
     // For every elements of input vector, apply sigmoid function.
-    std::vector<double> getOutput(std::vector<double>& inputs);
-
-    // Accumulate current gradient with the gradient vector from the upper node.
-    std::vector<double> doBackpropagation(std::vector<double>& upperGradients, double learningRate);
-};
-
-/*
-    
-*/
-class ReLU : public Module {
-private:
-    int dimSize;
-    // A copy of the input vector in previos output calculation.
-    std::vector<double> prevInput;
-
-public:
-    // Create a step function layer that accept an {dimSize}-dimensional input vector.
-    ReLU(int dimSize);
-
-    // Get the number of dimensions of an input vector.
-    int getInputSize();
-    // Get the number of dimensions of an ouput vector.
-    int getOutputSize();
-
-    // For every elements of input vector, apply ReLU function.
-    std::vector<double> getOutput(std::vector<double>& inputs);
-
-    // Accumulate current gradient with the gradient vector from the upper node.
-    std::vector<double> doBackpropagation(std::vector<double>& upperGradients, double learningRate);
-};
-
-/*
-    
-*/
-class Tanh : public Module {
-private:
-    int dimSize;
-    // A copy of the input vector in previos output calculation.
-    std::vector<double> prevInput;
-
-public:
-    // Create a step function layer that accept an {dimSize}-dimensional input vector.
-    Tanh(int dimSize);
-
-    // Get the number of dimensions of an input vector.
-    int getInputSize();
-    // Get the number of dimensions of an ouput vector.
-    int getOutputSize();
-
-    // For every elements of input vector, apply Tanh function.
     std::vector<double> getOutput(std::vector<double>& inputs);
 
     // Accumulate current gradient with the gradient vector from the upper node.

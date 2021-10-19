@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.15)  19 OCT 2021 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.15)  19 OCT 2021 23:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -748,142 +748,173 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/UML.png, id=32, 657.45625pt x 269.005pt>
-File: images/UML.png Graphic file (type png)
-<use images/UML.png>
-Package pdftex.def Info: images/UML.png  used on input line 49.
-(pdftex.def)             Requested size: 328.82707pt x 134.54321pt.
- [1
+<images/uml-module.png, id=50, 743.77875pt x 528.97626pt>
+File: images/uml-module.png Graphic file (type png)
+<use images/uml-module.png>
+Package pdftex.def Info: images/uml-module.png  used on input line 49.
+(pdftex.def)             Requested size: 469.75502pt x 334.09624pt.
+<images/uml-error.png, id=52, 714.67pt x 324.21124pt>
+File: images/uml-error.png Graphic file (type png)
+<use images/uml-error.png>
+Package pdftex.def Info: images/uml-error.png  used on input line 56.
+(pdftex.def)             Requested size: 469.75502pt x 213.10445pt.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}pdfTeX warning (ext4): desti
-nation with the same identifier (name{figure.1}) has been already used, duplica
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2pdfTeX warning (ext4): d
+estination with the same identifier (name{figure.1}) has been already used, dup
+licate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.75 		\]
+         pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.75 		\]
+          <./images/uml-module.png> <./images/uml-error.png>] [3]
+\openout3 = `report.pyg'.
+
+
+(./_minted-report/default-pyg-prefix.pygstyle)
+(./_minted-report/default.pygstyle)
+(./_minted-report/8B855D3A6AA9BF4C0090FF937E9AB652D056FA939DEE1CFB528B6798A1EED
+084.pygtex [4])
+<images/graph-error.png, id=158, 683.6742pt x 484.9317pt>
+File: images/graph-error.png Graphic file (type png)
+<use images/graph-error.png>
+Package pdftex.def Info: images/graph-error.png  used on input line 174.
+(pdftex.def)             Requested size: 469.75502pt x 333.20473pt.
+<images/graph-lines.png, id=159, 683.6742pt x 485.6544pt>
+File: images/graph-lines.png Graphic file (type png)
+<use images/graph-lines.png>
+Package pdftex.def Info: images/graph-lines.png  used on input line 180.
+(pdftex.def)             Requested size: 469.75502pt x 333.70131pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
+ [5] [6pdfTeX warning (ext4): destination with the same identifier (name{figure
+.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.184 \end{document}
+                     <./images/graph-error.png>] [7pdfTeX warning (ext4): desti
+nation with the same identifier (name{figure.4}) has been already used, duplica
 te ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.56 			\item \textbf
-                     {Perceptron}: 본 과제에서 Logic gate를 학습시�...
- <./images/UML.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-
- []
-
-[2]
-\openout3 = `report.pyg'.
-
- (./_minted-report/default-pyg-prefix.pygstyle)
-(./_minted-report/default.pygstyle)
-(./_minted-report/F6A6EA300CD6B6DA37ACE922BD9F4C19D056FA939DEE1CFB528B6798A1EED
-084.pygtex) [3]
-<images/Figure_1.png, id=128, 867.24pt x 505.89pt>
-File: images/Figure_1.png Graphic file (type png)
-<use images/Figure_1.png>
-Package pdftex.def Info: images/Figure_1.png  used on input line 149.
-(pdftex.def)             Requested size: 422.77664pt x 246.6223pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
- [4pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.155 \end{document}
-                     <./images/Figure_1.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
+l.184 \end{document}
+                     <./images/graph-lines.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 155.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 155.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 184.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 184.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 282D22859BDAB3E11B309E52A7907062;380.
+(rerunfilecheck)             Checksum: 05E4AE133A9142A2C716C31D414CDB1B;703.
 runsystem(rm report.pyg)...executed.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 155.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 184.
  ) 
 Here is how much of TeX's memory you used:
- 13063 strings out of 481239
- 210157 string characters out of 5920377
- 555828 words of memory out of 5000000
- 27951 multiletter control sequences out of 15000+600000
- 569730 words of font info for 156 fonts, out of 8000000 for 9000
+ 13091 strings out of 481239
+ 210629 string characters out of 5920377
+ 556039 words of memory out of 5000000
+ 27961 multiletter control sequences out of 15000+600000
+ 568302 words of font info for 151 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,7n,70p,949b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,7n,70p,949b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/nanumtype1/nanummjbac.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/nanumtype1/nanummjbad.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/nanumtype1/nanummjbb2.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/nanumtype1/nanummjbb4.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/nanumtype1/nanummjbb7.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/nanumtype1/nanummjbb8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/nanumtype1/nanummjbb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/nanumtype1/nanummjbba.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/nanumtype1/nanummjbbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/na
-numtype1/nanummjbc0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanum
-type1/nanummjbc1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtyp
-e1/nanummjbc2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/
-nanummjbc5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nan
-ummjbc6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanumm
-jbc7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc9.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbcc.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbcd.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd0.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd1.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd2.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd3.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd5.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd6.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/nanumtype1/nanummjmae.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/nanumtype1/nanummjmb0.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/nanumtype1/nanummjmb1.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/nanumtype1/nanummjmb2.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/nanumtype1/nanummjmb3.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/nanumtype1/nanummjmb4.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/nanumtype1/nanummjmb5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/nanumtype1/nanummjmb7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/n
-anumtype1/nanummjmb8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanu
-mtype1/nanummjmb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumty
-pe1/nanummjmba.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1
-/nanummjmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/na
-nummjmbc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanum
-mjmbd.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjm
-be.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/nanumtype1/nanummjmcf.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/nanumtype1/nanummjmd0.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/nanumtype1/nanummjmd1.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/nanumtype1/nanummjmd2.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/nanumtype1/nanummjmd3.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/nanumtype1/nanummjmd4.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/nanumtype1/nanummjmd5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-nanumtype1/nanummjmd6.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm100
-0.pfb>
-Output written on report.pdf (4 pages, 2889692 bytes).
+1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/nanumtype1/nanummjbac.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/nanumtype1/nanummjbad.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/nanumtype1/nanummjbb0.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/nanumtype1/nanummjbb2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/n
+anumtype1/nanummjbb3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanu
+mtype1/nanummjbb4.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumty
+pe1/nanummjbb7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1
+/nanummjbb8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/na
+nummjbb9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanum
+mjbba.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjb
+bc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbd.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc0.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc5.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc9.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/nanumtype1/nanummjbcd.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/nanumtype1/nanummjbce.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/nanumtype1/nanummjbd2.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/nanumtype1/nanummjbd3.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/nanumtype1/nanummjbd5.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/nanumtype1/nanummjbd6.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/nanumtype1/nanummjmac.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/nanumtype1/nanummjmad.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/nanumtype1/nanummjmae.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/nanumtype1/nanummjmb0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+nanumtype1/nanummjmb1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nan
+umtype1/nanummjmb2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumt
+ype1/nanummjmb3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype
+1/nanummjmb4.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/n
+anummjmb5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanu
+mmjmb7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummj
+mb8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/nanumtype1/nanummjmc8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/nanumtype1/nanummjmc9.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/nanumtype1/nanummjmcc.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/nanumtype1/nanummjmcd.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/nanumtype1/nanummjmce.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/nanumtype1/nanummjmcf.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/nanumtype1/nanummjmd0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/na
+numtype1/nanummjmd1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanum
+type1/nanummjmd2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtyp
+e1/nanummjmd3.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/
+nanummjmd4.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nan
+ummjmd5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanumm
+jmd6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd
+7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on report.pdf (7 pages, 3157102 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
- 17 named destinations out of 1000 (max. 500000)
- 67 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 435 PDF objects out of 1000 (max. 8388607)
+ 334 compressed objects within 4 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

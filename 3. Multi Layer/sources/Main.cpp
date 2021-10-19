@@ -43,6 +43,7 @@ int main() {
         { { TRUE , TRUE  }, { FALSE } }
     };
 
+    // Dataset to train Donut gate.
     const Dataset donutData = {
         { { 0.0, 0.0 }, { 0 } },
         { { 0.0, 1.0 }, { 0 } },
@@ -103,16 +104,19 @@ void trainLogicGate(std::string name, Dataset data, std::vector<int> nodesPerLay
         errorHistory.push_back(errorSum / data.size());
     } while (++iterCount < ITER_MAX && TOLERANCE < errorHistory.back());
 
+    // Check whether trained model gave right answers from all inputs.
     if (correctCount == data.size()) {
         std::cout << "    Successfully trained " << name << " Gate! (after " << errorHistory.size() << " iterations)\n";
     } else {
         std::cout << "    Failed to train " << name << " Gate... (after " << errorHistory.size() << " iterations)\n";
     }
 
+    // Save weight matrices of all FullyConnected layers.
     std::string dirPath = "./results/" + name;
     gate.saveWeights(dirPath);
     std::cout << "    Saved weight matrices. (" << dirPath << ")\n";
 
+    // Save error histories.
     std::ofstream errorStream(dirPath + "/error.csv");
     for (int i = 0; i < errorHistory.size(); ++i) {
         errorStream << i+1 << "," << errorHistory[i] << "\n";

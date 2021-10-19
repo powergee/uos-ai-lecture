@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Training AND Gate...
+	Successfully trained AND Gate! (after 24566 iterations)
+	Saved weight matrices. (./results/AND)
+	Saved error history. (./results/AND/error.csv)
+Training OR Gate...
+	Successfully trained OR Gate! (after 13205 iterations)
+	Saved weight matrices. (./results/OR)
+	Saved error history. (./results/OR/error.csv)
+Training XOR Gate...
+	Successfully trained XOR Gate! (after 47945 iterations)
+	Saved weight matrices. (./results/XOR)
+	Saved error history. (./results/XOR/error.csv)
+Training Donut Gate...
+	Successfully trained Donut Gate! (after 189699 iterations)
+	Saved weight matrices. (./results/Donut)
+	Saved error history. (./results/Donut/error.csv)
+\end{Verbatim}
