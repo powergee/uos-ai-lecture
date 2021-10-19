@@ -9,7 +9,8 @@
 #define TRUE 1
 #define FALSE 0
 #define LEARNING_RATE 0.05
-#define ITER_MAX 1000000
+#define TOLERANCE 1e-3
+#define ITER_MAX 500000
 
 using DataPair = std::pair<std::vector<double>, std::vector<double>>;
 using Dataset = std::vector<DataPair>;
@@ -54,8 +55,8 @@ int main() {
         { { 0.5, 0.5 }, { 1 } }
     };
 
-    trainLogicGate("AND", andData, { 2, 2, 1 });
-    trainLogicGate("OR", orData, { 2, 2, 1 });
+    trainLogicGate("AND", andData, { 2, 1 });
+    trainLogicGate("OR", orData, { 2, 1 });
     trainLogicGate("XOR", xorData, { 2, 2, 1 });
     trainLogicGate("Donut", donutData, { 2, 3, 1 });
     
@@ -100,7 +101,7 @@ void trainLogicGate(std::string name, Dataset data, std::vector<int> nodesPerLay
             gate.doBackpropagation(initGradients, LEARNING_RATE);
         }
         errorHistory.push_back(errorSum / data.size());
-    } while (++iterCount < ITER_MAX && correctCount < data.size());
+    } while (++iterCount < ITER_MAX && TOLERANCE < errorHistory.back());
 
     if (correctCount == data.size()) {
         std::cout << "    Successfully trained " << name << " Gate! (after " << errorHistory.size() << " iterations)\n";
@@ -111,4 +112,11 @@ void trainLogicGate(std::string name, Dataset data, std::vector<int> nodesPerLay
     std::string dirPath = "./results/" + name;
     gate.saveWeights(dirPath);
     std::cout << "    Saved weight matrices. (" << dirPath << ")\n";
+
+    std::ofstream errorStream(dirPath + "/error.csv");
+    for (int i = 0; i < errorHistory.size(); ++i) {
+        errorStream << i+1 << "," << errorHistory[i] << "\n";
+    }
+    errorStream.close();
+    std::cout << "    Saved error history. (" << dirPath + "/error.csv" << ")\n";
 }
