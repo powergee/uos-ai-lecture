@@ -18,9 +18,9 @@ Perceptron의 Activation으로 Hard Lift를 사용한다는 점에서 간선의 
 
 ### Figure 1-1: 올바른 AND Gate 가중치 설정
 
-<div style="width: 100%; text-align: center;">
+<p align="center">
     <img style="width: 80%" src="images/1-Perceptron.png"></img>
-</div>
+</p>
 
 ---
 
@@ -33,17 +33,17 @@ Perceptron의 Activation으로 Hard Lift를 사용한다는 점에서 간선의 
 
 ### Figure 2-1: 클래스 UML
 
-<div style="width: 100%; text-align: center;">
+<p align="center">
     <img style="width: 80%" src="images/2-UML.png"></img>
-</div>
+</p>
 
 학습 결과는 아래와 같다. Multi Layer Perceptron이 아니기 때문에 AND, OR는 학습이 되지만 XOR은 학습할 수 없다.
 
 ### Figure 2-2: Loss 그래프와 최종 진리표
 
-<div style="width: 100%; text-align: center;">
+<p align="center">
     <img style="width: 100%" src="images/2-Result.png"></img>
-</div>
+</p>
 
 ---
 
@@ -58,25 +58,25 @@ Perceptron의 Activation으로 Hard Lift를 사용한다는 점에서 간선의 
 
 ### Figure 3-1: 클래스 UML
 
-<div style="width: 100%; text-align: center;">
+<p align="center">
     <img style="width: 80%" src="images/3-uml-module.png"></img>
-</div>
+</p>
 
-<div style="width: 100%; text-align: center;">
+<p align="center">
     <img style="width: 80%" src="images/3-uml-error.png"></img>
-</div>
+</p>
 
 ### Figure 3-2: Loss 그래프
 
-<div style="width: 100%; text-align: center;">
+<p align="center">
     <img style="width: 100%" src="images/3-graph-error.png"></img>
-</div>
+</p>
 
 ### Figure 3-3: MLP가 학습한 직선들
 
-<div style="width: 100%; text-align: center;">
+<p align="center">
     <img style="width: 100%" src="images/3-graph-lines.png"></img>
-</div>
+</p>
 
 ---
 
@@ -93,9 +93,9 @@ PyTorch의 기본적인 문법을 이용하여 아래 수식대로 Output을 계
 
 ### Figure 4-1: Loss 그래프 비교
 
-<div style="width: 100%; text-align: center;">
+<p align="center">
     <img style="width: 100%" src="images/4-loss-cmp.png"></img>
-</div>
+</p>
 
 ---
 
@@ -123,15 +123,15 @@ PyTorch의 기본적인 문법을 이용하여 아래 수식대로 Output을 계
 
 ### Figure 5-1: 각 Column의 Pearson 상관관계
 
-<div style="width: 100%; text-align: center;">
+<p align="center">
     <img style="width: 100%" src="images/5-corr.png"></img>
-</div>
+</p>
 
 ### Figure 5-2: 모델 구조 (input_dim={11, 8, 3})
 
-<div style="width: 100%; text-align: center;">
+<p align="center">
     <img style="width: 40%" src="images/5-model.png"></img>
-</div>
+</p>
 
 ### Figure 5-3: Loss 그래프 비교
 
